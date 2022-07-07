@@ -9,14 +9,6 @@ A **Blog app** similar classic blog website. With fully functional website that 
 
 Everything will be based on the ERD class diagram presented below. 
 
-<!-- </br>
- <div align="center">
-   <kbd>
-    <img alt="gif" src="https://user-images.githubusercontent.com/80895497/143606720-cc2cd9bd-2909-44f0-b2ea-8056741679c4.gif" width=100% />
-    <p>Catalog of my things Console App</p>
-   </kbd>
-</div> -->
-
 </br>
  <div align="center">
     <img alt="gif" src="./public/blog_app_erd.png" width=50% />
