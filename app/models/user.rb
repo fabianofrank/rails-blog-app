@@ -3,9 +3,7 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
-  def recent_posts
-  end
+  def recent_posts; end
 
-  def count_post
-  end
+  def count_post; end
 end
