@@ -26,7 +26,7 @@ $ git clone git@github.com:fabianofrank/rails-blog-app.git
 ```
  - Then go to the right folder 
 ```
-$ cd Blog_app
+$ cd rails-blog-app
 ```
 ```
 $ bundle
@@ -58,22 +58,21 @@ $ rails db:seed
  ```
  $ bundle exec rspec
  ```
- </br>
+ <!-- </br>
  <div align="center">
     <kbd>
     <img alt="gif" src="https://user-images.githubusercontent.com/80895497/144337923-8f5660a0-6e8a-4ba4-99a5-c6ab42bb3b73.png" width=90% />
     <p>16 Request Specs passed</p>
        </kbd>
-</div>
+</div> -->
 
 ## Built With
 
  - Ruby on RAils  <img src="https://cdn.emojidex.com/emoji/seal/Ruby.png" width=15px>
  - PostgreSQL <img src="https://user-images.githubusercontent.com/80895497/142954032-f7072df9-3586-48f9-a9e0-7fdd284eb833.png" width=15px>
- 
 </br>
 
-## Authors
+## Author
 
 👤 **Fabiano Frank**
 
@@ -101,7 +100,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/fabianofrank/rails-blog-app/blob/dev/LICENSE.md) licensed.
+This project is [MIT](https://github.com/fabianofrank/rails-blog-app/blob/develop/LICENSE.md) licensed.
 
 <!-- rails generate migration CreatePosts author_id:bigint title:string text:text comments_counter:integer likes_counter:integer -->
 
