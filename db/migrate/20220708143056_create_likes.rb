@@ -9,8 +9,5 @@ class CreateLikes < ActiveRecord::Migration[7.0]
 
     add_foreign_key :likes, :users, column: :author_id
     add_foreign_key :likes, :posts, column: :post_id
-
-    add_reference :likes, :author_id, foreign_key: true
-    add_reference :likes, :post_id, foreign_key: true
   end
 end
