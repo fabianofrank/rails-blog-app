@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'Users', type: :request do
+RSpec.describe 'Posts', type: :request do
   describe 'GET /index' do
-    before(:each) { get users_path } # get(:users)
+    before(:each) { get user_posts_path(1) } # get(:users:user_id:posts)
 
     it 'returns response status success' do
       expect(response).to have_http_status(:ok)
@@ -13,7 +13,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'shows placeholder text success' do
-      expect(response.body).to include('Users#index')
+      expect(response.body).to include('Posts#index')
     end
   end
 end
