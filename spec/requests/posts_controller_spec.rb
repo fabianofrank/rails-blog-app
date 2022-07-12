@@ -8,9 +8,9 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to have_http_status(:ok)
     end
 
-    # it 'renders template success' do
-    #   expect(response).to render_template('index')
-    # end
+    it 'renders template success' do
+      expect(response).to render_template('index')
+    end
 
     it 'shows placeholder text success' do
       expect(response.body).to include('Posts#index')
