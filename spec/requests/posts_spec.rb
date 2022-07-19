@@ -9,7 +9,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'renders template success' do
-      expect(response).to render_template('index')
+      expect(response.body).to match(/Posts/)
     end
 
     it 'shows placeholder text success' do
