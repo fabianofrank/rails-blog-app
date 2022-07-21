@@ -1,9 +1,5 @@
-<h1>Users#index</h1>
-<ul>
-  <li>
-    <% @user.each do |user| %>
-      Name: <%= user.name %><br>
-      Number of user: <%= user.posts_counter %><br><br>
-    <% end %>
-  </li>
+<ul class="user-container">
+  <% @users.each do |user| %>
+    <%= render partial: "shared/users", locals: { user: user } %>
+  <% end %>
 </ul>

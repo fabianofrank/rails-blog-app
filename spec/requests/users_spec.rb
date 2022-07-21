@@ -9,11 +9,11 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'renders template success' do
-      expect(response.body).to match(/Users/)
+      expect(response.body).to match(/user/)
     end
 
     it 'shows placeholder text success' do
-      expect(response.body).to include('Users#index')
+      expect(response.body).to include('user')
     end
   end
 end
