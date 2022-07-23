@@ -1,5 +1,5 @@
 <div class="post-body">
-  <%= form_with model: @post, method: :post, url: user_posts_path() do |form| %>
+  <%= form_with url: new_post_path, local: true, method: :post do |form| %>
     <div>
       <%= form.text_field :title, class: "form-title", placeholder: "Title" %>
     </div>

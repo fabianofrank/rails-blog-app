@@ -9,23 +9,24 @@ class PostsController < ApplicationController
   end
 
   def new
-    @user = User.find(params[:user_id])
+    @post = Post.new
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = Post.new(post_params) #title: params[:title], text: params[:text]
+    @post.author_id = current_user.id
     if @post.valid?
       @post.save
       flash[:notice] = 'Post created'
     else
       flash[:notice] = 'Could not create post'
     end
-    redirect_to user_post_path(@current_user.id)
+    redirect_to user_path(current_user.id)
   end
 
   private
 
   def post_params
-    params.require(:post).permit(:title, :text)
+    params.permit(:title, :text)
   end
 end
