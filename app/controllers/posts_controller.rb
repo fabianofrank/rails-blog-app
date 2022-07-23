@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params) #title: params[:title], text: params[:text]
+    @post = Post.new(post_params) # title: params[:title], text: params[:text]
     @post.author_id = current_user.id
     if @post.valid?
       @post.save
