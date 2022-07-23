@@ -15,4 +15,7 @@
   <% end %>
 </div>
 
-<%= render partial: "shared/button", locals: { user: @user } %>
+<div class="buttons-container">
+  <%= render partial: "button-show", locals: { user: @user } %>
+  <%= render partial: "button-post", locals: { user: @user } %>
+</div>

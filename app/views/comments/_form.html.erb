@@ -1,0 +1,11 @@
+<div class="comment-body">
+  <%= form_with model: @post do |form| %>
+    <div>
+      <%= form.text_field :text, class: "form-text", placeholder: "Comments" %>
+    </div>
+   
+    <div>
+      <%= form.submit %>
+    </div>
+  <%end%>
+</div>
