@@ -6,6 +6,9 @@ ruby '3.0.3'
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'will_paginate', '~> 3.1.1'
+gem 'will_paginate-bootstrap'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3'
 
@@ -23,8 +26,6 @@ gem 'importmap-rails'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
-
-gem 'rails-controller-testing'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'

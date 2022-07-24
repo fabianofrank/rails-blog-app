@@ -1,0 +1,15 @@
+<div class="post-body">
+  <%= form_with url: new_post_path, local: true, method: :post do |form| %>
+    <div>
+      <%= form.text_field :title, class: "form-title", placeholder: "Title" %>
+    </div>
+
+    <div>
+      <%= form.text_field :text, class: "form-text", placeholder: "Comment" %>
+    </div>
+   
+    <div>
+      <%= form.submit %>
+    </div>
+  <%end%>
+</div>

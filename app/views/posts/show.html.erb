@@ -1,2 +1,12 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="post-container">
+  <%= render partial: "shared/posts", locals: { post: @post } %>
+</div>
+
+<div class="comment-container">
+  <% @post.comments.each do |comment| %>
+    <%= render partial: "shared/comments", locals: { comment: comment }%>
+  <% end %>
+</div>
+
+
+  <%= render partial: "button-comment", locals: { user: @user } %>

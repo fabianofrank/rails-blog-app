@@ -1,0 +1,14 @@
+<li class="user-header">
+  <%= link_to user_path(user.id) do%>
+
+    <div>
+      <%= image_tag(image_url(user.photo), :alt => "#{user.name}'s profile photo") %>
+    </div>
+
+    <div>
+      <h1><%= user.name %></h1>
+      <h3>Posts: <%= user.posts_counter %></h3>
+    </div>
+
+  <%end%>
+</li>
