@@ -1,5 +1,5 @@
 <div class="comment-body">
-  <%= form_with model: @post do |form| %>
+  <%= form_with url: user_post_comments_path, local: true, method: :post do |form| %>
     <div>
       <%= form.text_field :text, class: "form-text", placeholder: "Comments" %>
     </div>
